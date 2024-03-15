@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/Bootstrap Css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light me-auto fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/lgoo.png" alt="" class="custom-img"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto fs-5">
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="Handicraftsproducts.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="About.html">About Us</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="Contact.html">Contact</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="facts.html"> Faqs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="cart-icon"><i class="fa fa-shopping-cart" style="font-size: 24px;"></i>
+              <span id="cart-quantity" class="badge bg-danger"></span>
+            </a>
+          </li>
+        </ul>
+        <div class="form-check form-switch mx-2 my-auto">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+        </div>
+       
+        </div>
+</div>
+    </div>
+  </nav> 
+      <br><br><br>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mt-4 bg-light">
+                    <img src="images/Tables wares8.jpg" alt="" class="custom-1">
+                </div>
+                <div class="col-lg-5 offset-1 mt-4">
+                    <h3 class="fw-bold">Tablewares- Handicraft</h3>
+                    <p>Tables wares in glasses and Plaates top of the Table</p>
+                    <hr>
+                    <h4 class="fw-bold mt-4">PKR5000 or 99.99/month</h4>
+                    <p>Suggested payment with 6 month special</p>
+                    <hr>
+                    <a href="" class="btn btn-success rounded-pill  add-to-cart custom-buynow" data-id="56">Add to Card</a>
+                    <h6 class="mt-4 fw-bold"><i class="bi bi-truck text-danger"></i>    Free Delivery</h6>
+                    <h6 class="mt-4 fw-bold"><i class="bi bi-arrow-clockwise text-danger"></i>   Return Delivery</h6>
+                    <p>Free 30days Delivery Returns.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="cart-modal">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="cart-modal-label">Add to Card</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body" id="cart-modal-body">
+          
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                  </div>
+              </div>
+          </div>
+                    </div>
+
+
+
+                    <div class="container mt-5">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-10 col-xl-8 text-center">
+                          <h3 class="mb-4">Customer Reviews</h3>
+                        </div>
+                      </div>
+                    
+                      <div class="row text-center">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                          <div class="d-flex justify-content-center mb-4">
+                            <img src="data:image/jpeg;base64,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"
+                              class="rounded-circle shadow-1-strong" width="100" height="100" />
+                          </div>
+                          <p class="lead my-3 text-muted">
+                           " ! The plates are not only beautifully handcrafted but also sturdy and durable. The intricate designs add a touch of elegance to my dining table, and they're perfect for entertaining guests. I highly recommend these plates to anyone looking for high-quality tableware."
+                          </p>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-half text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          
+                          <p class="font-italic font-weight-normal mb-0"> Zohaib</p>
+                        </div>
+                        <div class="col-md-6 mb-0">
+                          <div class="d-flex justify-content-center mb-4">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAREBUQEg8SExIXFRASEhUVFRAQEhcQFhUWFhgVFRYYHSggGRonGxcWITEiJSkrMDouGB8zODUtNygtLisBCgoKDg0OGRAQGislHx4tLS0rLS0rLS0tLS0tLSstLy0wLy0tLS0rLS0rLS0tLS0rLS0tKy0rLSstLS0tLS0tLf/AABEIAPYAzQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwECAwQGBQj/xABFEAACAQIDAwgGBwUGBwAAAAABAgADEQQSIQUxUQYTIkFhcYHTBxdVkZShMkJScoKx0RQVI2LBQ0WSorLwFjNEU2Nz4f/EABkBAQADAQEAAAAAAAAAAAAAAAABAwQCBf/EACMRAQACAgICAgIDAAAAAAAAAAABAgMREjEhQTJRBFITQnH/2gAMAwEAAhEDEQA/AJxiIgIiICIiAiJ4PKjldg9nretUvUIulJLNVbw6h2mwkTMR2mImenvTl+UXL3Z+Cur1ucqj+ypWqPfgxvlX8REiPlV6RcbjSUVjh6BuObpkhmH/AJKm89wsOwzjwJnvn/VfXB+yStsemDFPcYahTor1M961S3G2ij5zkcfyw2lW+njq/cjmiPdTyzw4lE5LT3K6KVjqGatiqj6vUd/vMzfmZZTqspurMp4glT8pZE5dvXwPKjaFE3p47EDsNR6i/wCB7r8p2Ow/S9i6ZC4qkldetk/hVbcfst3WEjeJ1F7R1LmaVnuH0zya5VYPHrmw9W7AXem3Qqr95eHaLjtntz5RwmJqUnWrTdkqKbqykqwPYZNXIj0mUK9MU8bVp0K62GduhSqD7V9yHiDYcOA0480W8SzXxTHmEiRLaVRWAZWDKRcEEEEcQRvl0vUkREBERAREQEREBERASytVVFLuwVVBZmJAUKBckk7hL5D3pn5UM1T93UmsihXxNvrObMlM9gFmI7V4Tm9uMbdUrynS3lh6V6js1HADImoNdhd27aanRR2m57BIxrVWdi7szuxuzMSzMeJJ1JlkTDa827ba1ivREROXRERAREQEREBERA9nk3ynxeAfNh6pC3u1JrtRbvTqPaLHtk78iuWFDaVLMoyVltztIm5U/aU/WQ9R99p83zf2Fterg8QmJomzodRewdPrI38pGnuO8CW48s176V5McW/19SxNTZO0aeJoU8RTN0qIrrxFxuPaDoe6bc2sRERAREQEREBERAxYrEJSptVdgqIrO7HcFUXJPhPlza+NOIxFaub/AMSrVqa7wGYkDwFh4Sa/TPtE0tnc2psa1VKRt9gBqjeByAeMgiZfyLedNWCvjZERM68iJRjAE62/3aVmxszZleu2SjSeq/XlFwO87lHfLcZhzSc02K5l0bKyuA3WuYaEjsJhDDE9LZuwcViNaVByvW5GSmBxLtYfObtLkbjar5KdF2UaNUZWoUr9eU1LFl7QNeEDn0N9fdKzsdqchHw7YRWfOK1VaNVlHRRmYWC3/lzanrXqnN7b2XUwtZqFUWZdQbaMnU68Qf8A5A0om/tjY9fCvkrIRf6DjWm46ijdenjxmhCSIiBL/oT5RAo+znNmUtWoHihN3TvDHN+I8JKs+W+T+0zhcVRxINubqIzf+u9nHipYeM+pJswW3XX0yZq6tv7IiJcpIiICIiAiIgRv6c8OzYKjUA0SuM3YGpuAfeAPGQnJw9OHO/sFPKTzfPpzoHDK+XN2ZsvjlkHzHn+TZh+JMlCg9RgqKWbXQC5sBc/lMc7n0S4LPiatUi6pSVfxtUVlPeObMpWOf5K8n6mOrc2pyotmq1N+VOq3Fj1Dv4Trn5DLWxppKho4OgtNC39pVqFQ7WY7z0gC24WAHZ3+z9m0aGfmqapnc1Ht1uQAT2bt27fNqSjbSo7IoJQ/Z0phKVrFULISOu7KbknrN9ZiwXJ7B0daeFoqeORS3vOs9KICIiEKMoO8A7jrrqDcH3zQ2zsXD4tMlemHA+idVdTxVhqJ6EQNBtj0mwowlQGrTCLTu9i5CiytcAdIaai0hLbexKuGr1aOVmFMjpW302BZGPeoJP3W4SfJ4PLPDA4HFOqjOaPSPWUS7W8AX95hMIL1PdLoiQ6XU6DVGFNRdnIRRxZjlA95n1gi2AHAAT5m5GYZqu0cKi7+fov+GmwqN8lM+m5q/HjxLNnnqCIiaGciIgIiICIiBo7c2XTxeHqYaoOhUUqeIO8MO0GxHdPmbbGzKuFr1MNVFnpsVPAjerr2EWI759TyP/SzyROLo/tVFL4iiDmAHSqUN5UcWXUjxHWJTmpyjcel2G/GdSguTF6L8CKeAFS3Squ7n7oORf8ATfxkOAyeeRoA2fhrf9mmfEi5mOGqXsRErJcqREQEREBERASlRAwKsLgggjiDoRLpSB87Y3DGlVqUjvR3p6/yMVv8pgnQcvqGTaNcdRZXH4kUn53mLkbydqbQxS0FuKYIas4+pSB11+0dw7ddwMRG51DqZ1G5SD6FOTRGbaNRd4alhwfs36dTxIyjubiJLExYXDpSRadNQqIqoijQBQLADwmWb6V4xphvblOyIidOSIiAiIgIiICUJlYgQh6TNg0iGxtGkKZzfxggAQhj9O3U1yLnruZ1nIGrm2bhzwVl/wALsv5ATc23gVZauHcdFldb9hGh91j4TyvRsGXALTYWZKuIpsODCobj5zzY3udvQnWo03NrbHxddjl2i9Cn1JSpKpt21C2YnusOyeLiOQ2JYabXxV/5jUI+VSdtPJ5Z0B+yB6FNq7JUpvVpFmWpUoi91UrqOlkJy9QIlla8nFracRiOTW3MPrRxj1gOpaz5v8FXo/Ob3I/aG2nxIp4hH5kX5xq1EUrAfYdVGZr24zW9Emzce1So2KeqtAI4zOaipzpZcoTNvIAbjpa++SLSJ1U6lSVvuDDqYeH9YtSakW2vltSoFGsumhVa7Hv0lczp3WNuC2/tbbhxL0qSuqXPNmlSVkKdRNVlNjbfqNZiocntsVta2Oen2GtUZh+FDl+ckBKeZ1QtkBvmY6WUf1O6cD6T8DjkrGnQSoaTvSqUqyGs45sUsjUrLcXL5mPWej1TulJt5L2rWdPVw3IzFj+9cWD2M4HzedDsbZmLom1THHEU/s1KS5xp1VA1/eDM3JPCCngaK1ywxIUlgpBYKWJUVeq4XKDfXxnpxavH25i2/SJfSZgmfaaIg6VWnRVfvFmT+gklclaVPBhaNKmFpnKrEAAuwAGcneW7TPC21gM+1aNW2lPC1Wv/ADZyi/6yfwzp9l0s9UC2ikE9w1/QTiJnlGnUxHGduqiInpPPIiICIiAiIgIiICIiB4/KHB5lFQDVdD2r/s/Oc/sLD83zwtYNWNQfiRL/AOYNO2dAQQdxBB7jOYWkUdkO/wDMDcZjz11bl9teG266+mWCIiVO1oQXvYX7hLoiAM0cOLsJvTQomzDvkS7r1LfIB3iYxh0+wvuEyRJcqKoG4WlYiENDHUxnva5ZQp+6pJ+Zb5Todh4TJTzH6Tanu6p5VGhzlULbTTN93eZ08u/HpuZsrz21EVIiJrZSIiAiIgIiICIiAiIgJr4+nem3df3azYlCLi0iY3GkxOp25yJc62JHAke6Wzz20lldyBpvuo95Av8AOXwRCSeaZuDDKL5brffa1r8bHS8tXBJe5GY9RbW3cN0iY26rMQy0KmZVa1rgGXxElyREyYdMzqO0e7rkxG0T4e5h6eVQOwX75kiJ6EeGGSIiAiIgIiICIiAiIgIiICIiB5W0sMQS43Hf2GaE6MieTtDBhOmPo6X7Lm0zZcf9oaMeT1LRZb9ZHdLCr9TDxH6GZImdftiPOfyf5hA5z+T/ADGXVKV/rMO4kSlKll+szd5vISZW62HgP1Jl6i3Hx1lYko2T0tl4Y3zn8P6xgsB9Zx3L+v6T0ppxYvcs+TJ6giImhQREQEREBERAREQEREBERAREQE1dpgGkwO7T8xNqau0v+Ufw/mJzf4y6p8oc7mNPfqnHeV7+ImwDfURMJokfQNuzevu6vCee2s0TWNWoN9MHtBlRUqH6gXvN/kI2aZ2YAXJsJbh7s6k6LmWw6zrvPAdkotLrY5j1dQHcJnpfSHePzkx2ienQxET0WEiIgIiICIiAiIgIiICIiAiIgIiWGoIF80tq1AEy9ZI9w1luK2hlNguvE7p5lSoWNybmUZcka1C7Hjne5WxETK0EREBKqbG/jKRA6Km4YAjcZdPCw2KZN2o4HdPVoYoML2I+c20yRZkvSatiJQMD1ysscEREBERAREQERKEwKyhMxPV4TFI2jbOaolhqmY4kbRtUsTKREDUx9PQNw0PdNGeyRfQzzMThMuoHR/LvmfLT3DThvGuMsMSmQdvvMpl4E+OsoaF0RLSCeu3dAuiW5B2+8yoQcP6wLlUk2G+etTSwA4TBhMKF6RAzflNmasVNRuWTNflOoJcHI65bEtUsorcRMgqDjNaI2bbcTVViJmSpfvk7TtkiIkpJr1Hv3TJWbS0wSJRJERIQREQEREBERA1quDB3aflNZ8K46r909KJXOKsrK5rQ8k02+yfcZUUWP1T7p6sTj+GPt3/PP08+ngmO+w+Zm5RoKu4a8euZIllaVqrtktbsiInbgiIgIiICIiBnpPfSZJqg2m0DJhMMFY6zHLnOplshBERAtYy6WtvHf/Qy6AiIgIiICIiAiIgIiICIiAiIgUc21lZbU3Hul0BERATYpHSa8zUDEEIR9elT2YnxLeVHrzqezE+JbypEuGZA6moL0wy5wCQSl+lYjW9rzom5MotPK1S1VWqCo/SKILZqbVAAbIyZCDcfTYknLaXcKjuPXnU9mJ8S3lR686nsxPiW8qcF+5afNt/AxIdHfokjnaiAKFVVyWXMSzXs1hTqfTtpu7K2Dh+e5pqVeuzUg4PN1qlOkzVSoWsuHYVAQFZSQSA1+ibSONUuvPpyqXB/dqdf/UN5Ur686nsxPiW8qc5iORdFmAXnV6GHVmpkV6K1GSqXxDO1v4AamVJB35t1spwjkjRFPEDLiDUpcwaRKqn7TeniXYYT6rI3NqwJzHKhsCxylxqOp9edT2YnxLeVHrzqezE+JbypE+KqozZkQIth0QSRe2p14zDJ4QhL3rzqezE+Jbyo9edT2YnxLeVIhiTwgS9686nsxPiW8qPXnU9mJ8S3lSIYjhAl7151PZifEt5UevOp7MT4lvKkQxHCBL3rzqezE+Jbyo9edT2YnxLeVIhiOECXvXnU9mJ8S3lR686nsxPiW8qRDNnZ2DNaqKSsqs2bLmuBcAmxPVoDI4QJV9edT2YnxLeVHrzqezE+JbypHf8AwxiNLGmQbFene4IUjcDY2YGx7d9jLl5LVyD0qecNlK3Pbva1r6buGptHCokFvTlUIt+7E+JbypUenOp7MT4lvKkcVeTmIVC5CaFBYNqQzFL6gDQgX4X1tMg5LYm1yaQBLAZny6jNfQi/1W93aI4VEh+vOp7MT4lvKj151PZifEt5Uj7C8mKj2/iICSQQVc5WXmswJtYkc6Bv3giZDySq2B52nvQa5ltmqBLknS3SDDrIvYaauNR3vrzqezE+JbypVfTrUH92J8S3lSPMZyZqU6T1TVpkIEJHSBOax0uLW1Av1sGXeJ4ccKhAP6eEROxW54ns8JQREClv08JX/YiICIiAiIgIiICIiAiIgIiIFLRlHCIgLRaIgVlLREBYSsRA/9k="
+                              class="rounded-circle shadow-1-strong" width="100" height="100" />
+                          </div>
+                          <p class="lead my-3 text-muted">
+                            " Despite following the care instructions provided, the flatware lost its shine and developed dark spots. It's still usable, but I expected better durability for the price paid. "
+                          </p>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-half text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <p class="font-italic font-weight-normal mb-0"> Abrar</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <footer class="text-center mt-4 bg-footer">
+ 
+                      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                        
+                        <div class="me-5 d-none d-lg-block">
+                          <span>Get connected with us on social networks:</span>
+                        </div>
+                     
+                    
+                    
+                        <div>
+                          <a href="https://www.facebook.com/" class="me-4 text-reset">
+                            <i class="bi bi-facebook text-primary" style="font-size: 20px;"></i>
+                          </a>
+                          <a href="http://www.twitter.com/" class="me-4 text-reset" style="font-size: 20px;">
+                            <i class="bi bi-twitter text-primary"></i>
+                          </a>
+                          <a href="https://www.google.com.pk/" class="me-4 text-reset" style="font-size: 20px;">
+                            <i class="bi bi-google text-success"></i>
+                          </a>
+                          <a href="https://www.instagram.com/" class="me-4 text-reset" style="font-size: 20px;">
+                            <i class="bi bi-instagram text-danger"></i>
+                          </a>
+                          <a href="https://pk.linkedin.com/" class="me-4 text-reset" style="font-size: 20px;">
+                            <i class="bi bi-linkedin text-primary"></i>
+                          </a>
+                        </div>
+                        
+                      </section>
+                      
+                        <div class="container text-center text-md-start mt-5">
+                          
+                          <div class="row mt-3">
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                              
+                              <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Handicrafts
+                              </h6>
+                              <p>
+                                Handicrafts are a manifestation of human creativity, skill, and cultural heritage. These unique creations encompass a wide range of products crafted by hand. 
+                              </p>
+                            </div>
+                           
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                             
+                              <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                              </h6>
+                              <p>
+                                <a href="Iron3.html" class="text-dark" style="text-decoration: none;">Iron</a>
+                              </p>
+                              <p>
+                                <a href="Glass4.html"  class="text-dark" style="text-decoration: none;">Glass</a>
+                              </p>
+                              <p>
+                                <a href="Home decor5.html"  class="text-dark" style="text-decoration: none;">Home decor</a>
+                              </p>
+                              <p>
+                                <a href="Tables wares5.html" class="text-dark" style="text-decoration: none;">Table ware</a>
+                              </p>
+                              <p>
+                                <a href="Wood8.html" class="text-dark" style="text-decoration: none;">Wood</a>
+                              </p>
+                              <p>
+                                <a href="Aluminum3.html" class="text-dark" style="text-decoration: none;">Aliuminum</a>
+                              </p>
+                            </div>
+                           
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                              <h6 class="text-uppercase fw-bold mb-4">
+                                Useful link
+                              </h6>
+                              <p>
+                                <a href="Home.html" class="text-dark" style="text-decoration: none;">Home</a>
+                              </p>
+                              <p>
+                                <a href="About.html" class="text-dark" style="text-decoration: none;">About</a>
+                              </p>
+                              <p>
+                                <a href="Contact.html" class="text-dark" style="text-decoration: none;">Contact</a>
+                              </p>
+                              <p>
+                                <a href="Gallery.html" class="text-dark" style="text-decoration: none;">Gallery</a>
+                              </p>
+                              <p>
+                                <a href="Handicraftsproducts.html" class="text-dark" style="text-decoration: none;">Product</a>
+                              </p>
+                              <p>
+                                <a href="facts.html" class="text-dark" style="text-decoration: none;">Faqs</a>
+                              </p>
+                    
+                            </div>
+                    
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                              <p><i class="bi bi-house-door-fill me-3"></i> Karachi Korangi </p>
+                              <p>
+                                <i class="bi bi-envelope-fill me-3"></i></i>
+                                info@example.com
+                              </p>
+                              <p><i class="bi bi-telephone-fill me-3"></i> + 32 483 84 604</p>
+                              <p><i class="bi bi-phone-flip me-3"></i> + 01 234 567 89</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="text-center p-4">© 2024 Create By Huzaifa: </div>
+                    </footer> 
+
+
+
+    <script src="jQ/jquery-3.7.1.min.js"></script>
+    <script>
+      document.querySelectorAll('.add-to-cart').forEach(b =>{
+          b.addEventListener('click' , addToCart);
+      });
+
+
+
+      function addToCart(event){
+          event.preventDefault();
+          const productId = event.target.dataset.id;
+
+
+          let cart = JSON.parse(localStorage.getItem('cart'))|| {};
+
+
+          cart[productId] = (cart[productId]|| 0) + 1;
+
+
+          updatecartQuantity(cart);
+
+
+          localStorage.setItem('cart', JSON.stringify(cart));
+      }
+
+
+      function updatecartQuantity(cart){
+          const cartQuantity = Object.values(cart).reduce((acc,val)=>acc+ val,0);
+          document.getElementById('cart-quantity').textContent = cartQuantity;
+      }
+
+      const initCart = JSON.parse(localStorage.getItem('cart'))||{};
+      updatecartQuantity(initCart);
+      
+      //next class
+
+      document.getElementById('cart-icon').addEventListener('click' ,showCart);
+
+      function showCart (){
+          const cart = JSON.parse(localStorage.getItem('cart'))||{};
+
+          document.getElementById('cart-modal-body').innerHTML = "";
+
+          for(const productId in cart){
+              const quantity = cart[productId];
+
+              const productHTMl = `
+              <div class="row border-bottom py-2">
+                  <div class="col-2">
+                      <img src="images/Tables wares8.jpg" height="70px" width="60px" alt="Prodct Image">
+                  </div>
+                  <div class="col-6">
+                      <p>Table ware</p>
+                      <p>Prices: PKR5000</p>
+                      <p>Quantity: ${quantity}</p>
+                      </div>
+                      <div class="col-4 align-self-center">
+                          <button class="btn btn-danger delete-from-cart" data-id="${productId}">Delete</button>
+                          </div>
+                      </div>`;
+                      document.getElementById('cart-modal-body').innerHTML +=productHTMl; 
+                  }
+
+                    const myModal = new bootstrap.Modal(document.getElementById('cart-modal'));
+                    myModal.show(); 
+                    document.querySelectorAll('.delete-from-cart').forEach(button=> {
+                      button.addEventListener('click', deleteFromCart);
+                    });
+      }
+
+      function deleteFromCart(event){
+          const productId = event.target.dataset.id;
+
+          let cart = JSON.parse(localStorage.getItem('cart'))||{};
+
+          delete cart[productId];
+
+          updatecartQuantity(cart);
+
+          localStorage.setItem('cart' , JSON.stringify(cart));
+
+          showCart();
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+      let Switchinput = document.getElementById('flexSwitchCheckChecked');
+      Switchinput.addEventListener('change', function () {
+        if (this.checked) {
+          document.body.classList.add('dark-mode');
+        }
+        else {
+          document.body.classList.remove('dark-mode')
+        }
+      })
+    });
+     
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

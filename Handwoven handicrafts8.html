@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/Bootstrap Css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light me-auto fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/lgoo.png" alt="" class="custom-img"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto fs-5">
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="Handicraftsproducts.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="About.html">About Us</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="Contact.html">Contact</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link active custom-anker" href="facts.html"> Faqs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="cart-icon"><i class="fa fa-shopping-cart" style="font-size: 24px;"></i>
+              <span id="cart-quantity" class="badge bg-danger"></span>
+            </a>
+          </li>
+        </ul>
+        <div class="form-check form-switch mx-2 my-auto">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+        </div>
+       
+        </div>
+</div>
+    </div>
+  </nav> 
+      <br><br><br>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mt-4 bg-light">
+                    <img src="images/Handwoven handicrafts8.jpeg" alt="" class="custom-1">
+                </div>
+                <div class="col-lg-5 offset-1 mt-4">
+                    <h3 class="fw-bold">Handwoven- Handicraft</h3>
+                    <p>Handwoven clothing and winter best clothes.</p>
+                    <hr>
+                    <h4 class="fw-bold mt-4">PKR250 or 99.99/month</h4>
+                    <p>Suggested payment with 6 month special</p>
+                    <hr>
+                    <a href="" class="btn btn-success rounded-pill add-to-cart custom-buynow" data-id="80">Add to Card</a>
+                    <h6 class="mt-4 fw-bold"><i class="bi bi-truck text-danger"></i>    Free Delivery</h6>
+                    <h6 class="mt-4 fw-bold"><i class="bi bi-arrow-clockwise text-danger"></i>   Return Delivery</h6>
+                    <p>Free 30days Delivery Returns.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="cart-modal">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="cart-modal-label">Add to Card</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body" id="cart-modal-body">
+          
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                  </div>
+              </div>
+          </div>
+                    </div>
+
+
+
+                    <div class="container mt-5">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-10 col-xl-8 text-center">
+                          <h3 class="mb-4">Customer Reviews</h3>
+                        </div>
+                      </div>
+                    
+                      <div class="row text-center">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                          <div class="d-flex justify-content-center mb-4">
+                            <img src="data:image/jpeg;base64,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"
+                              class="rounded-circle shadow-1-strong" width="100" height="100" />
+                          </div>
+                          <p class="lead my-3 text-muted">
+                           "While I can't provide specific reviews, you can look for customer feedback and reviews online or ask for recommendations from friends or family who have purchased similar products."
+                          </p>
+                          <i class="bi bi-star-half text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-half text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-half text-warning"></i>
+                          
+                          <p class="font-italic font-weight-normal mb-0">Hunain </p>
+                        </div>
+                        <div class="col-md-6 mb-0">
+                          <div class="d-flex justify-content-center mb-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPx7JNregBQED4owpTGcBeSAjtHnxje8IPaw&usqp=CAU"
+                              class="rounded-circle shadow-1-strong" width="100" height="100" />
+                          </div>
+                          <p class="lead my-3 text-muted">
+                            "Consider the durability of the handicraft. It should be well-made and able to withstand regular use without falling apart or losing its shape."
+                          </p>
+                          <i class="bi bi-star-half text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <p class="font-italic font-weight-normal mb-0">Burhan</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                    <footer class="text-center mt-4 bg-footer">
+ 
+                      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                        
+                        <div class="me-5 d-none d-lg-block">
+                          <span>Get connected with us on social networks:</span>
+                        </div>
+                     
+                    
+                    
+                        <div>
+                          <a href="https://www.facebook.com/" class="me-4 text-reset">
+                            <i class="bi bi-facebook text-primary" style="font-size: 20px;"></i>
+                          </a>
+                          <a href="http://www.twitter.com/" class="me-4 text-reset" style="font-size: 20px;">
+                            <i class="bi bi-twitter text-primary"></i>
+                          </a>
+                          <a href="https://www.google.com.pk/" class="me-4 text-reset" style="font-size: 20px;">
+                            <i class="bi bi-google text-success"></i>
+                          </a>
+                          <a href="https://www.instagram.com/" class="me-4 text-reset" style="font-size: 20px;">
+                            <i class="bi bi-instagram text-danger"></i>
+                          </a>
+                          <a href="https://pk.linkedin.com/" class="me-4 text-reset" style="font-size: 20px;">
+                            <i class="bi bi-linkedin text-primary"></i>
+                          </a>
+                        </div>
+                        
+                      </section>
+                      
+                        <div class="container text-center text-md-start mt-5">
+                          
+                          <div class="row mt-3">
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                              
+                              <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Handicrafts
+                              </h6>
+                              <p>
+                                Handicrafts are a manifestation of human creativity, skill, and cultural heritage. These unique creations encompass a wide range of products crafted by hand. 
+                              </p>
+                            </div>
+                           
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                             
+                              <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                              </h6>
+                              <p>
+                                <a href="Iron3.html" class="text-dark" style="text-decoration: none;">Iron</a>
+                              </p>
+                              <p>
+                                <a href="Glass4.html"  class="text-dark" style="text-decoration: none;">Glass</a>
+                              </p>
+                              <p>
+                                <a href="Home decor5.html"  class="text-dark" style="text-decoration: none;">Home decor</a>
+                              </p>
+                              <p>
+                                <a href="Tables wares5.html" class="text-dark" style="text-decoration: none;">Table ware</a>
+                              </p>
+                              <p>
+                                <a href="Wood8.html" class="text-dark" style="text-decoration: none;">Wood</a>
+                              </p>
+                              <p>
+                                <a href="Aluminum3.html" class="text-dark" style="text-decoration: none;">Aliuminum</a>
+                              </p>
+                            </div>
+                           
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                              <h6 class="text-uppercase fw-bold mb-4">
+                                Useful link
+                              </h6>
+                              <p>
+                                <a href="Home.html" class="text-dark" style="text-decoration: none;">Home</a>
+                              </p>
+                              <p>
+                                <a href="About.html" class="text-dark" style="text-decoration: none;">About</a>
+                              </p>
+                              <p>
+                                <a href="Contact.html" class="text-dark" style="text-decoration: none;">Contact</a>
+                              </p>
+                              <p>
+                                <a href="Gallery.html" class="text-dark" style="text-decoration: none;">Gallery</a>
+                              </p>
+                              <p>
+                                <a href="Handicraftsproducts.html" class="text-dark" style="text-decoration: none;">Product</a>
+                              </p>
+                              <p>
+                                <a href="facts.html" class="text-dark" style="text-decoration: none;">Faqs</a>
+                              </p>
+                    
+                            </div>
+                    
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                              <p><i class="bi bi-house-door-fill me-3"></i> Karachi Korangi </p>
+                              <p>
+                                <i class="bi bi-envelope-fill me-3"></i></i>
+                                info@example.com
+                              </p>
+                              <p><i class="bi bi-telephone-fill me-3"></i> + 32 483 84 604</p>
+                              <p><i class="bi bi-phone-flip me-3"></i> + 01 234 567 89</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="text-center p-4">© 2024 Create By Huzaifa: </div>
+                    </footer> 
+
+
+
+
+    <script src="jQ/jquery-3.7.1.min.js"></script>
+    <script>
+      document.querySelectorAll('.add-to-cart').forEach(b =>{
+          b.addEventListener('click' , addToCart);
+      });
+
+
+
+      function addToCart(event){
+          event.preventDefault();
+          const productId = event.target.dataset.id;
+
+
+          let cart = JSON.parse(localStorage.getItem('cart'))|| {};
+
+
+          cart[productId] = (cart[productId]|| 0) + 1;
+
+
+          updatecartQuantity(cart);
+
+
+          localStorage.setItem('cart', JSON.stringify(cart));
+      }
+
+
+      function updatecartQuantity(cart){
+          const cartQuantity = Object.values(cart).reduce((acc,val)=>acc+ val,0);
+          document.getElementById('cart-quantity').textContent = cartQuantity;
+      }
+
+      const initCart = JSON.parse(localStorage.getItem('cart'))||{};
+      updatecartQuantity(initCart);
+      
+      //next class
+
+      document.getElementById('cart-icon').addEventListener('click' ,showCart);
+
+      function showCart (){
+          const cart = JSON.parse(localStorage.getItem('cart'))||{};
+
+          document.getElementById('cart-modal-body').innerHTML = "";
+
+          for(const productId in cart){
+              const quantity = cart[productId];
+
+              const productHTMl = `
+              <div class="row border-bottom py-2">
+                  <div class="col-2">
+                      <img src="images/Handwoven handicrafts8.jpeg" height="70px" width="60px" alt="Prodct Image">
+                  </div>
+                  <div class="col-6">
+                      <p>Handwoven</p>
+                      <p>Prices: PKR250</p>
+                      <p>Quantity: ${quantity}</p>
+                      </div>
+                      <div class="col-4 align-self-center">
+                          <button class="btn btn-danger delete-from-cart" data-id="${productId}">Delete</button>
+                          </div>
+                      </div>`;
+                      document.getElementById('cart-modal-body').innerHTML +=productHTMl; 
+                  }
+
+                    const myModal = new bootstrap.Modal(document.getElementById('cart-modal'));
+                    myModal.show(); 
+                    document.querySelectorAll('.delete-from-cart').forEach(button=> {
+                      button.addEventListener('click', deleteFromCart);
+                    });
+      }
+
+      function deleteFromCart(event){
+          const productId = event.target.dataset.id;
+
+          let cart = JSON.parse(localStorage.getItem('cart'))||{};
+
+          delete cart[productId];
+
+          updatecartQuantity(cart);
+
+          localStorage.setItem('cart' , JSON.stringify(cart));
+
+          showCart();
+      }
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+      let Switchinput = document.getElementById('flexSwitchCheckChecked');
+      Switchinput.addEventListener('change', function () {
+        if (this.checked) {
+          document.body.classList.add('dark-mode');
+        }
+        else {
+          document.body.classList.remove('dark-mode')
+        }
+      })
+    });
+     
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
